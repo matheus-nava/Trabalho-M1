@@ -76,17 +76,6 @@ public class MenuController extends InterfaceUsuario{
     public void irParaInfoNota(ActionEvent evento ){
         Avaliacao a = tabela.getSelectionModel().getSelectedItem();
         if(a != null){
-            /*InfoNotaController proximaTela = new InfoNotaController();
-            ArrayList<Avaliacao> aList = a.getLista();
-            int i = 0;
-            while(true){
-                if(a.getNome().equals(aList.get(i).getNome()) && a.getDisciplina().equals(aList.get(i).getDisciplina()) 
-                         && a.getMedia().equals(aList.get(i).getMedia()) && a.getPeso() == aList.get(i).getPeso()){
-                    proximaTela.setIndex(i);
-                    break;
-                }
-                i++;
-            }*/
             lblAviso.setText("");
             InfoNotaController proximaTela = new InfoNotaController();
             proximaTela.setA(a);
