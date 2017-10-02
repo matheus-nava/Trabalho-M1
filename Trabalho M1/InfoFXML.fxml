@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Button layoutX="513.0" layoutY="354.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+    <Button layoutX="37.0" layoutY="354.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+    <TextField id="nomeText" fx:id="txtNome" layoutX="37.0" layoutY="54.0" prefWidth="528.0" />
+    <TextField id="pesoText" fx:id="txtPeso" layoutX="37.0" layoutY="128.0" prefWidth="263.0" />
+    <Label layoutX="37.0" layoutY="24.0" text="Nome:" />
+    <Label layoutX="37.0" layoutY="100.0" text="Peso:" />
+    <Label layoutX="37.0" layoutY="174.0" text="Disciplina:" />
+    <Label layoutX="37.0" layoutY="249.0" text="Média" />
+    <ComboBox fx:id="spinnerDis" layoutX="38.0" layoutY="201.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="spinnerMed" layoutX="38.0" layoutY="277.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+  </children>
+</AnchorPane>
