@@ -13,10 +13,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 
-/**
- *
- * @author marcelo
- */
 public abstract class InterfaceUsuario implements Initializable{
     
     private Scene minhaCena;
